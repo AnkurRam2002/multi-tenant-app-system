@@ -48,24 +48,19 @@ CREATE TABLE tenants (
 ---
 
 ## 📖 How it Works
-Enter tenant name, domain (like app1.local), and app path in the admin dashboard.
-
-App files are copied to the Nginx html folder.
-
-Nginx config is auto-generated for the new tenant.
-
-Nginx reloads to serve the app.
-
-Tenant becomes accessible at http://app1.local
-
-App statuses can be viewed in real-time from the dashboard.
+- Enter tenant name, domain (like app1.local), and app path in the admin dashboard.
+- App files are copied to the Nginx html folder.
+- Nginx config is auto-generated for the new tenant.
+- Nginx reloads to serve the app.
+- Tenant becomes accessible at http://app1.local
+- App statuses can be viewed in real-time from the dashboard.
 
 ## 🌐 Localhost Domain Mapping
 
-Add entries to your C:\Windows\System32\drivers\etc\hosts: 
+- Add entries to your C:\Windows\System32\drivers\etc\hosts: 
 
-127.0.0.1 app1.local
-127.0.0.1 app2.local
+  - 127.0.0.1 app1.local
+  - 127.0.0.1 app2.local
 
 ---
 
