@@ -38,13 +38,14 @@ cd multi-tenant-platform
 ## ⚙️ Configure Database
 Create a PostgreSQL database and a tenants table:
 
+```sql
 CREATE TABLE tenants (
   id SERIAL PRIMARY KEY,
   tenant_name VARCHAR(255) NOT NULL,
   domain VARCHAR(255) NOT NULL,
   target_port INTEGER NOT NULL
 );
-
+```
 ---
 
 ## 📖 How it Works
