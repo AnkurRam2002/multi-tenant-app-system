@@ -43,7 +43,8 @@ CREATE TABLE tenants (
   id SERIAL PRIMARY KEY,
   tenant_name VARCHAR(255) NOT NULL,
   domain VARCHAR(255) NOT NULL,
-  target_port INTEGER NOT NULL
+  target_port INTEGER NOT NULL,
+  status VARCHAR(50) DEFAULT 'online'
 );
 ```
 ---
