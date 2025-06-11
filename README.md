@@ -1,6 +1,8 @@
 # 🚀 Multi-Tenant App Deployment Platform
 
-A full-stack platform to deploy and manage multiple tenant web applications (like React apps) dynamically on a single server, each accessible through its own custom domain/subdomain — all managed via an admin dashboard!
+A full-stack platform to deploy and manage multiple tenant web applications (like React or Next apps) dynamically on a single server, each accessible through its own custom domain/subdomain using nginx reverse proxy — all managed via an admin dashboard!
+
+Currently the nginx config is setup to run static files only. it can be switched for running apps with relatively minor changes. 
 
 ---
 
@@ -21,7 +23,7 @@ A full-stack platform to deploy and manage multiple tenant web applications (lik
 ## 📦 Tech Stack
 
 - **Frontend:** React, Tailwind CSS, Axios
-- **Backend:** Node.js, Express, PostgreSQL (node-postgres)
+- **Backend:** Node.js, Express.js, PostgreSQL (node-postgres)
 - **Web Server:** Nginx (Windows)
 - **Deployment:** Localhost (with support for DigitalOcean or VPS)
 
@@ -31,11 +33,12 @@ A full-stack platform to deploy and manage multiple tenant web applications (lik
 
 ### 📥 Clone the repository
 
-bash
+```bash
 git clone https://github.com/your-username/multi-tenant-platform.git
 cd multi-tenant-platform
+```
 
-## ⚙️ Configure Database
+### ⚙️ Configure Database
 Create a PostgreSQL database and a tenants table:
 
 ```sql
