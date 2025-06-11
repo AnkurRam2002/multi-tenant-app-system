@@ -1,6 +1,6 @@
 # 🚀 Multi-Tenant App Deployment Platform
 
-A full-stack platform to deploy and manage multiple tenant web applications (like React or Next apps) dynamically on a single server, each accessible through its own custom domain/subdomain using nginx reverse proxy — all managed via an admin dashboard!
+StackHost is a full-stack platform to deploy and manage multiple tenant web applications (like React or Next apps) dynamically on a single server, each accessible through its own custom domain/subdomain using nginx reverse proxy — all managed via an admin dashboard!
 
 Currently the nginx config is setup to run static files only. it can be switched for running apps with relatively minor changes. 
 
